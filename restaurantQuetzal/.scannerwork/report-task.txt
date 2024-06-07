@@ -1,0 +1,6 @@
+projectKey=GestionRestaurant
+serverUrl=http://localhost:9000
+serverVersion=10.5.1.90531
+dashboardUrl=http://localhost:9000/dashboard?id=GestionRestaurant
+ceTaskId=87e1cbce-aea7-4fdc-b2de-2e373c887da6
+ceTaskUrl=http://localhost:9000/api/ce/task?id=87e1cbce-aea7-4fdc-b2de-2e373c887da6
