@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+	<h:head>
+		<f:facet name="first">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+            <meta name="apple-mobile-web-app-capable" content="yes" />
+        </f:facet>		
+		<title>Login</title>
+	</h:head>
+<h:body>
+
+	<style>
+    .product-item .product-item-content {
+        border: 1px solid var(--surface-d);
+        border-radius: 3px;
+        margin: .3rem;
+        text-align: center;
+        padding: 2rem 0;
+    }
+
+    .product-item .product-image {
+        width: 50%;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23)
+    }
+</style>
+	<h:form>
+	
+	<h5>Sistema Menú</h5>
+	
+
+        <p:dataTable id="dt-platillo" var="p" value="#{menuBean.listaplatillos}" rowKey="#{p.idMenu}"
+                     selection="#{p.platillo}" selectionMode="single">
+            <f:facet name="header">
+                RightClick to View Options
+            </f:facet>
+
+            <p:column headerText="Nombre">
+                <h:outputText value="#{p.nombre}" />
+            </p:column>
+            <p:column headerText="Descripcion">
+                <h:outputText value="#{p.descripcion}" />
+            </p:column>
+            <p:column headerText="Precio">
+                <h:outputText value="#{p.precio}" />
+            </p:column>
+        </p:dataTable>
+
+</h:form>
+
+
+
+</h:body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	  xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:p="http://primefaces.org/ui">
+
+	<h:head>
+		<f:facet name="first">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+            <meta name="apple-mobile-web-app-capable" content="yes" />
+        </f:facet>		
+		<title>Login</title>
+	</h:head>
+<h:body>
+	
+	<h:form>
+	
+	<p:menu toggleable="true" style="width:15%;height:100%">
+	
+		
+	<p:menuitem label="home" value="Home" icon="pi pi-home" outcome="/index.xhtml" style="height:120px"/>
+	
+	<p:menuitem label="menú" value="Menú" icon="pi pi-list" outcome="/Menú.xhtml" style="height:120px"/>
+	<p:menuitem label="reservaMesas" value="Reserva de mesas" icon="pi pi-table" outcome="/ReservaMesasClientes.xhtml" style="height:120px"/>
+	<p:menuitem label="fbCliente" value="Fedback del cliente" icon="pi pi-comments" outcome="/FedBackCliente.xhtml" style="height:120px"/>
+	
+	<p:submenu label="Empleados" >
+				<p:menuitem value="Sistema para empleados" icon="pi pi-fw pi-check" outcome="/LoginEmpleados"></p:menuitem>
+	</p:submenu>
+		
+		
+		
+		
+	
+	</p:menu>
+	
+	</h:form>
+
+</h:body>
+</html>
