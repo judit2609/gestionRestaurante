@@ -15,7 +15,7 @@ public class FedBack {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "id_Fedback")
 	Integer idFedbackCliente;
-	
+	 
 	@Column(name = "nombre_cliente")
 	String nombreCliente;
 	
